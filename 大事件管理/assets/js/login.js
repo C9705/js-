@@ -82,7 +82,7 @@ $(function() {
             layer.msg('Success');
             console.log(res.token);
             //将token存到本地
-            localStorage.setItem($('#layui-form [name="username"]').val(), res.token);
+            localStorage.setItem('token', res.token);
             //跳转
             $('#layui-form')[0].reset()
             location.href = '/大事件管理/home/index.html';
