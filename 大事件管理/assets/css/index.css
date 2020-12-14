@@ -57,3 +57,15 @@ a {
     top: 4px;
     margin-right: 10px;
 }
+
+
+/* 天气 */
+
+.weather-body {
+    margin-left: 70%;
+}
+
+.weather {
+    width: 120px;
+    height: 60px;
+}

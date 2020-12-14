@@ -16,29 +16,33 @@
             <div class="layui-logo">
                 <img src="../assets/images/logo.png" alt="" />
             </div>
+            <div class="weather-body">
+                <iframe class="weather" scrolling="no" frameborder="0" allowtransparency="true" src="https://i.tianqi.com?c=code&id=6&color=%23FFFFFF&icon=1&site=12"></iframe>
+            </div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
 
             <ul class="layui-nav layui-layout-right">
+
                 <li class="layui-nav-item">
                     <a href="javascript:;" class="userinfo">
-                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img" id="topImg">
                         <span class="text-avater">
                             A
                         </span> 个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">基本资料</a></dd>
+                        <dd><a href="../User/userMessage.html" target="fm">基本资料</a></dd>
                         <dd>
-                            <a href="javascript:;">修改密码</a>
+                            <a href="../User/resetPwd.html" target="fm">修改密码</a>
                         </dd>
                         <dd>
-                            <a href="javascript:;">更换头像</a>
+                            <a href="../User/user_avater.html" target="fm">更换头像</a>
                         </dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
 
-                    <a href="javascript:;">
+                    <a href="javascript:;" id="exit">
                         <span class="iconfont icon-tuichu"></span>退出</a>
                 </li>
             </ul>
@@ -67,15 +71,15 @@
                             <span class="iconfont icon-16"></span>文章管理</a>
                         <dl class="layui-nav-child">
                             <dd>
-                                <a href="javascript:;" target="fm">
+                                <a href="../book/art_cale.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i>文章类别</a>
                             </dd>
                             <dd>
-                                <a href="javascript:;">
+                                <a href="../book/art_list.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i>文章列表</a>
                             </dd>
                             <dd>
-                                <a href="javascript:;">
+                                <a href="../book/art_pub.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i>发布文章</a>
                             </dd>
 
@@ -85,10 +89,10 @@
                         <a href="javascript:;">
                             <span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">基本资料</a></dd>
-                            <dd><a href="javascript:;">更换头像</a></dd>
+                            <dd><a href="../User/userMessage.html" target="fm">基本资料</a></dd>
+                            <dd><a href="../User/user_avater.html" target="fm">更换头像</a></dd>
                             <dd>
-                                <a href="javascript:;">重置密码</a>
+                                <a href="../User/resetPwd.html" target="fm">重置密码</a>
                             </dd>
                         </dl>
                     </li>
@@ -98,12 +102,12 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <iframe src='./dashboard.html' frameborder="0" name="fm"></iframe>
+            <iframe src='./dashboard.html' frameborder="0" name="fm" class="fm"></iframe>
         </div>
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            © layui.com - 底部固定区域
+            © power by cuichuang
         </div>
     </div>
     <script src="../assets/lib/layui/layui.all.js"></script>
