@@ -107,7 +107,8 @@ $(function() {
                     return layui.layer.msg('失败')
                 }
                 layui.layer.msg('成功')
-                location.href = '/大事件管理/book/art_list.html'
+                    // location.href = '/大事件管理/book/art_list.html'
+                location.href = '../book/art_list.html'
             }
 
         })

@@ -85,7 +85,8 @@ $(function() {
             localStorage.setItem('token', res.token);
             //跳转
             $('#layui-form')[0].reset()
-            location.href = '/大事件管理/home/index.html';
+                // location.href = '/大事件管理/home/index.html';
+            location.href = '../home/index.html';
         })
     })
 })
