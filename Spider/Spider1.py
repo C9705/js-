@@ -26,7 +26,8 @@ https:(安全的http协议，涉及数据加密)
 requests：作用----模拟浏览器发请求
 '''
 # 指定URL，发起请求,r为返回的响应对象
-r=requests.get('https://www.sogou.com/')
+# r=requests.get('https://www.sogou.com/')
+r=requests.get('https://www.baidu.com/s?wd=python',headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36'})
 # 返回响应数据
 responseText=r.text
 
